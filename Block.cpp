@@ -2,10 +2,10 @@
 #include <QBrush>
 #include <QGraphicsScene>
 
-
+// Constructor for Block class
 Block::Block(QGraphicsItem *parent, int row): QGraphicsRectItem(parent) {
-    // draw rect
-    setRect(0, 0, 20, 10);
+    // draw rect for the block
+    setRect(0, 0, 80, 25);
     QBrush brush;
     brush.setStyle(Qt::SolidPattern);
 
@@ -29,6 +29,6 @@ Block::Block(QGraphicsItem *parent, int row): QGraphicsRectItem(parent) {
             break;
     }
 
-    setBrush(brush);
+    setBrush(brush); // Set the brush color for the block
 }
 

@@ -10,7 +10,7 @@ class Paddle:public QObject, public QGraphicsPixmapItem
 public:
     Paddle(QGraphicsPixmapItem *parent = nullptr);
     void keyPressEvent(QKeyEvent*event);
-
+    double paddleCenterX();
 };
 
 #endif // PADDLE_H

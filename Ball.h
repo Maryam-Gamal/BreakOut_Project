@@ -1,11 +1,9 @@
-
 #ifndef BALL_H
 #define BALL_H
-
 #include <QGraphicsRectItem>
 #include <QObject>
-
-class Ball : public QObject, public QGraphicsRectItem {
+//#include <QSet>
+class Ball : public QObject, public  QGraphicsPixmapItem {
     Q_OBJECT
 public:
     Ball(QGraphicsItem *parent = nullptr);
@@ -15,8 +13,8 @@ public slots:
     void move();
 
 private:
-    double x_velocity;
-    double y_velocity;
+    double xvelocity;
+    double yvelocity;
 
     void reverseVelocity();
     void handlePaddleCollision();
